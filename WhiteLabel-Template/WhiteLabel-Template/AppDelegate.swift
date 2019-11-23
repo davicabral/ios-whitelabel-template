@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let url = Bundle.main.url(forResource: "settings", withExtension: "json"), let data = try? Data(contentsOf: url) {
+            Settings.shared = try? JSONDecoder().decode(Settings.self, from: data)
+        }
+        
         return true
     }
 

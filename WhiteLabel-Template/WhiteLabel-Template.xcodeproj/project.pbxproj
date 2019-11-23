@@ -40,6 +40,10 @@
 		93AD65BB2389A08800CF78CA /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65B923899E4E00CF78CA /* DebugView.swift */; };
 		93AD65BC2389A09500CF78CA /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65B923899E4E00CF78CA /* DebugView.swift */; };
 		93AD65BD2389A09500CF78CA /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65B923899E4E00CF78CA /* DebugView.swift */; };
+		93AD65BF2389A46200CF78CA /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD65BE2389A45600CF78CA /* settings.json */; };
+		93AD65C12389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
+		93AD65C22389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
+		93AD65C32389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,8 @@
 		93AD65B423899CAF00CF78CA /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
 		93AD65B623899CFF00CF78CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AD65B923899E4E00CF78CA /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		93AD65BE2389A45600CF78CA /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
+		93AD65C02389A4BB00CF78CA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				936B5D5D238985C6003A7F79 /* Assets.xcassets */,
 				936B5D5F238985C6003A7F79 /* LaunchScreen.storyboard */,
 				936B5D62238985C6003A7F79 /* Info.plist */,
+				93AD65C02389A4BB00CF78CA /* Settings.swift */,
 			);
 			path = "WhiteLabel-Template";
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				936B5D7623898960003A7F79 /* source.json */,
+				93AD65BE2389A45600CF78CA /* settings.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 			files = (
 				936B5D61238985C6003A7F79 /* LaunchScreen.storyboard in Resources */,
 				936B5D7723898A05003A7F79 /* source.json in Resources */,
+				93AD65BF2389A46200CF78CA /* settings.json in Resources */,
 				936B5D5E238985C6003A7F79 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +385,7 @@
 				931BA8BA2389968A00835CE9 /* HomeViewController.swift in Sources */,
 				931BA8BB2389968A00835CE9 /* DescriptionViewController.swift in Sources */,
 				931BA8BC2389968A00835CE9 /* AppDelegate.swift in Sources */,
+				93AD65C22389A4BB00CF78CA /* Settings.swift in Sources */,
 				931BA8BD2389968A00835CE9 /* SceneDelegate.swift in Sources */,
 				93AD65BC2389A09500CF78CA /* DebugView.swift in Sources */,
 				931BA8BE2389968A00835CE9 /* CharCollectionViewCell.swift in Sources */,
@@ -391,6 +401,7 @@
 				936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */,
 				936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */,
 				936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */,
+				93AD65C12389A4BB00CF78CA /* Settings.swift in Sources */,
 				936B5D57238985C5003A7F79 /* SceneDelegate.swift in Sources */,
 				93AD65BB2389A08800CF78CA /* DebugView.swift in Sources */,
 				936B5D7023898826003A7F79 /* CharCollectionViewCell.swift in Sources */,
@@ -406,6 +417,7 @@
 				93AD659F23899C6200CF78CA /* HomeViewController.swift in Sources */,
 				93AD65A023899C6200CF78CA /* DescriptionViewController.swift in Sources */,
 				93AD65A123899C6200CF78CA /* AppDelegate.swift in Sources */,
+				93AD65C32389A4BB00CF78CA /* Settings.swift in Sources */,
 				93AD65A223899C6200CF78CA /* SceneDelegate.swift in Sources */,
 				93AD65BD2389A09500CF78CA /* DebugView.swift in Sources */,
 				93AD65A323899C6200CF78CA /* CharCollectionViewCell.swift in Sources */,

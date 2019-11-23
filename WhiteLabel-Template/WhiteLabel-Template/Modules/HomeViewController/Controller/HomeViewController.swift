@@ -94,12 +94,15 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let char = objects?[indexPath.row] else {
-            return
-        }
         
-        let controller = DescriptionViewController(char: char)
-        navigationController?.pushViewController(controller, animated: true)
+        if Settings.shared.hasSelection {
+            guard let char = objects?[indexPath.row] else {
+                return
+            }
+            
+            let controller = DescriptionViewController(char: char)
+            navigationController?.pushViewController(controller, animated: true)           
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
