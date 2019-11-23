@@ -37,6 +37,10 @@ class HomeViewController: UIViewController {
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        FetchService.all { [weak self] (chars) in
+            self?.objects = chars
+        }
     }
 
 }
