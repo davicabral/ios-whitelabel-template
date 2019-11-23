@@ -23,6 +23,15 @@ class HomeViewController: UIViewController {
         return collection
     }()
     
+    #if DEBUG
+    private lazy var debugView: DebugView = {
+        let debugView = DebugView(frame: .zero)
+        debugView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(debugView)
+        return debugView
+    }()
+    #endif
+    
     var objects: [Char]? {
         didSet{
             collectionView.reloadData()
@@ -34,8 +43,28 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .white
         
         let safeArea = view.safeAreaLayoutGuide
+        let topAnchor: NSLayoutYAxisAnchor
+        let distance: CGFloat
+        
+        #if DEBUG
+            topAnchor = debugView.bottomAnchor
+            distance = 0
+        
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
+            debugView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            debugView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            debugView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            debugView.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        
+        #else
+            topAnchor = safeArea.topAnchor
+            distance = 16
+        #endif
+        
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: topAnchor, constant: distance),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
