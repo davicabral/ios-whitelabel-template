@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931BA8BA2389968A00835CE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D58238985C5003A7F79 /* HomeViewController.swift */; };
+		931BA8BB2389968A00835CE9 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */; };
+		931BA8BC2389968A00835CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D54238985C5003A7F79 /* AppDelegate.swift */; };
+		931BA8BD2389968A00835CE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D56238985C5003A7F79 /* SceneDelegate.swift */; };
+		931BA8BE2389968A00835CE9 /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6F23898826003A7F79 /* CharCollectionViewCell.swift */; };
+		931BA8BF2389968A00835CE9 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7323898918003A7F79 /* FetchService.swift */; };
+		931BA8C02389968A00835CE9 /* Char.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6C238987E5003A7F79 /* Char.swift */; };
+		931BA8C32389968A00835CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D5F238985C6003A7F79 /* LaunchScreen.storyboard */; };
 		936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D54238985C5003A7F79 /* AppDelegate.swift */; };
 		936B5D57238985C5003A7F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D56238985C5003A7F79 /* SceneDelegate.swift */; };
 		936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D58238985C5003A7F79 /* HomeViewController.swift */; };
@@ -17,9 +25,12 @@
 		936B5D7423898918003A7F79 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7323898918003A7F79 /* FetchService.swift */; };
 		936B5D7723898A05003A7F79 /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D7623898960003A7F79 /* source.json */; };
 		936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */; };
+		93AD659923899A4C00CF78CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AD659823899A4C00CF78CA /* Assets.xcassets */; };
+		93AD659C23899B3A00CF78CA /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD659B23899B2900CF78CA /* source.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		931BA8C92389968A00835CE9 /* Ricky and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ricky and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhiteLabel-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D54238985C5003A7F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		936B5D56238985C5003A7F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,9 +43,19 @@
 		936B5D7323898918003A7F79 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
 		936B5D7623898960003A7F79 /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
 		936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		93AD65952389999700CF78CA /* RNM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RNM-Info.plist"; sourceTree = "<group>"; };
+		93AD659823899A4C00CF78CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93AD659B23899B2900CF78CA /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		931BA8C12389968A00835CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936B5D4E238985C5003A7F79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931BA8CB238996A200835CE9 /* RNM */ = {
+			isa = PBXGroup;
+			children = (
+				93AD659A23899B1900CF78CA /* Mock */,
+				93AD65952389999700CF78CA /* RNM-Info.plist */,
+				93AD659823899A4C00CF78CA /* Assets.xcassets */,
+			);
+			path = RNM;
+			sourceTree = "<group>";
+		};
 		936B5D48238985C5003A7F79 = {
 			isa = PBXGroup;
 			children = (
 				936B5D53238985C5003A7F79 /* WhiteLabel-Template */,
+				931BA8CB238996A200835CE9 /* RNM */,
 				936B5D52238985C5003A7F79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */,
+				931BA8C92389968A00835CE9 /* Ricky and Morty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,9 +184,34 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		93AD659A23899B1900CF78CA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				93AD659B23899B2900CF78CA /* source.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		931BA8B82389968A00835CE9 /* RNM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931BA8C62389968A00835CE9 /* Build configuration list for PBXNativeTarget "RNM" */;
+			buildPhases = (
+				931BA8B92389968A00835CE9 /* Sources */,
+				931BA8C12389968A00835CE9 /* Frameworks */,
+				931BA8C22389968A00835CE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNM;
+			productName = "WhiteLabel-Template";
+			productReference = 931BA8C92389968A00835CE9 /* Ricky and Morty.app */;
+			productType = "com.apple.product-type.application";
+		};
 		936B5D50238985C5003A7F79 /* WhiteLabel-Template */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 936B5D65238985C6003A7F79 /* Build configuration list for PBXNativeTarget "WhiteLabel-Template" */;
@@ -200,11 +258,22 @@
 			projectRoot = "";
 			targets = (
 				936B5D50238985C5003A7F79 /* WhiteLabel-Template */,
+				931BA8B82389968A00835CE9 /* RNM */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		931BA8C22389968A00835CE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931BA8C32389968A00835CE9 /* LaunchScreen.storyboard in Resources */,
+				93AD659923899A4C00CF78CA /* Assets.xcassets in Resources */,
+				93AD659C23899B3A00CF78CA /* source.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936B5D4F238985C5003A7F79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +287,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		931BA8B92389968A00835CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931BA8BA2389968A00835CE9 /* HomeViewController.swift in Sources */,
+				931BA8BB2389968A00835CE9 /* DescriptionViewController.swift in Sources */,
+				931BA8BC2389968A00835CE9 /* AppDelegate.swift in Sources */,
+				931BA8BD2389968A00835CE9 /* SceneDelegate.swift in Sources */,
+				931BA8BE2389968A00835CE9 /* CharCollectionViewCell.swift in Sources */,
+				931BA8BF2389968A00835CE9 /* FetchService.swift in Sources */,
+				931BA8C02389968A00835CE9 /* Char.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936B5D4D238985C5003A7F79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +329,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		931BA8C72389968A00835CE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XT2J75S2;
+				INFOPLIST_FILE = "RNM/RNM-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_NAME = "Ricky and Morty";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		931BA8C82389968A00835CE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XT2J75S2;
+				INFOPLIST_FILE = "RNM/RNM-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_NAME = "Ricky and Morty";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		936B5D63238985C6003A7F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		931BA8C62389968A00835CE9 /* Build configuration list for PBXNativeTarget "RNM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931BA8C72389968A00835CE9 /* Debug */,
+				931BA8C82389968A00835CE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		936B5D4C238985C5003A7F79 /* Build configuration list for PBXProject "WhiteLabel-Template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
