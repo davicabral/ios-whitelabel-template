@@ -27,10 +27,20 @@
 		936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */; };
 		93AD659923899A4C00CF78CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AD659823899A4C00CF78CA /* Assets.xcassets */; };
 		93AD659C23899B3A00CF78CA /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD659B23899B2900CF78CA /* source.json */; };
+		93AD659F23899C6200CF78CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D58238985C5003A7F79 /* HomeViewController.swift */; };
+		93AD65A023899C6200CF78CA /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */; };
+		93AD65A123899C6200CF78CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D54238985C5003A7F79 /* AppDelegate.swift */; };
+		93AD65A223899C6200CF78CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D56238985C5003A7F79 /* SceneDelegate.swift */; };
+		93AD65A323899C6200CF78CA /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6F23898826003A7F79 /* CharCollectionViewCell.swift */; };
+		93AD65A423899C6200CF78CA /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7323898918003A7F79 /* FetchService.swift */; };
+		93AD65A523899C6200CF78CA /* Char.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6C238987E5003A7F79 /* Char.swift */; };
+		93AD65A823899C6200CF78CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D5F238985C6003A7F79 /* LaunchScreen.storyboard */; };
+		93AD65B523899CC300CF78CA /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD65B423899CAF00CF78CA /* source.json */; };
+		93AD65B723899CFF00CF78CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AD65B623899CFF00CF78CA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		931BA8C92389968A00835CE9 /* Ricky and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ricky and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		931BA8C92389968A00835CE9 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhiteLabel-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D54238985C5003A7F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		936B5D56238985C5003A7F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +56,10 @@
 		93AD65952389999700CF78CA /* RNM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RNM-Info.plist"; sourceTree = "<group>"; };
 		93AD659823899A4C00CF78CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AD659B23899B2900CF78CA /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		93AD65AE23899C6200CF78CA /* Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AD65B123899C8B00CF78CA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AD65B423899CAF00CF78CA /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		93AD65B623899CFF00CF78CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		936B5D4E238985C5003A7F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AD65A623899C6200CF78CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,6 +102,7 @@
 			children = (
 				936B5D53238985C5003A7F79 /* WhiteLabel-Template */,
 				931BA8CB238996A200835CE9 /* RNM */,
+				93AD65B023899C6B00CF78CA /* Pokemon */,
 				936B5D52238985C5003A7F79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */,
-				931BA8C92389968A00835CE9 /* Ricky and Morty.app */,
+				931BA8C92389968A00835CE9 /* Rick and Morty.app */,
+				93AD65AE23899C6200CF78CA /* Pokemon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +215,24 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		93AD65B023899C6B00CF78CA /* Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				93AD65B323899C9700CF78CA /* Mock */,
+				93AD65B123899C8B00CF78CA /* Info.plist */,
+				93AD65B623899CFF00CF78CA /* Assets.xcassets */,
+			);
+			path = Pokemon;
+			sourceTree = "<group>";
+		};
+		93AD65B323899C9700CF78CA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				93AD65B423899CAF00CF78CA /* source.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,7 +250,7 @@
 			);
 			name = RNM;
 			productName = "WhiteLabel-Template";
-			productReference = 931BA8C92389968A00835CE9 /* Ricky and Morty.app */;
+			productReference = 931BA8C92389968A00835CE9 /* Rick and Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 		936B5D50238985C5003A7F79 /* WhiteLabel-Template */ = {
@@ -227,6 +268,23 @@
 			name = "WhiteLabel-Template";
 			productName = "WhiteLabel-Template";
 			productReference = 936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93AD659D23899C6200CF78CA /* Pokemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AD65AB23899C6200CF78CA /* Build configuration list for PBXNativeTarget "Pokemon" */;
+			buildPhases = (
+				93AD659E23899C6200CF78CA /* Sources */,
+				93AD65A623899C6200CF78CA /* Frameworks */,
+				93AD65A723899C6200CF78CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pokemon;
+			productName = "WhiteLabel-Template";
+			productReference = 93AD65AE23899C6200CF78CA /* Pokemon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -259,6 +317,7 @@
 			targets = (
 				936B5D50238985C5003A7F79 /* WhiteLabel-Template */,
 				931BA8B82389968A00835CE9 /* RNM */,
+				93AD659D23899C6200CF78CA /* Pokemon */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +340,16 @@
 				936B5D61238985C6003A7F79 /* LaunchScreen.storyboard in Resources */,
 				936B5D7723898A05003A7F79 /* source.json in Resources */,
 				936B5D5E238985C6003A7F79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AD65A723899C6200CF78CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD65B523899CC300CF78CA /* source.json in Resources */,
+				93AD65B723899CFF00CF78CA /* Assets.xcassets in Resources */,
+				93AD65A823899C6200CF78CA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +384,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93AD659E23899C6200CF78CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD659F23899C6200CF78CA /* HomeViewController.swift in Sources */,
+				93AD65A023899C6200CF78CA /* DescriptionViewController.swift in Sources */,
+				93AD65A123899C6200CF78CA /* AppDelegate.swift in Sources */,
+				93AD65A223899C6200CF78CA /* SceneDelegate.swift in Sources */,
+				93AD65A323899C6200CF78CA /* CharCollectionViewCell.swift in Sources */,
+				93AD65A423899C6200CF78CA /* FetchService.swift in Sources */,
+				93AD65A523899C6200CF78CA /* Char.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -341,7 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
-				PRODUCT_NAME = "Ricky and Morty";
+				PRODUCT_NAME = "Rick and Morty";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
-				PRODUCT_NAME = "Ricky and Morty";
+				PRODUCT_NAME = "Rick and Morty";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -515,6 +598,42 @@
 			};
 			name = Release;
 		};
+		93AD65AC23899C6200CF78CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XT2J75S2;
+				INFOPLIST_FILE = Pokemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93AD65AD23899C6200CF78CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XT2J75S2;
+				INFOPLIST_FILE = Pokemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +660,15 @@
 			buildConfigurations = (
 				936B5D66238985C6003A7F79 /* Debug */,
 				936B5D67238985C6003A7F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AD65AB23899C6200CF78CA /* Build configuration list for PBXNativeTarget "Pokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AD65AC23899C6200CF78CA /* Debug */,
+				93AD65AD23899C6200CF78CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

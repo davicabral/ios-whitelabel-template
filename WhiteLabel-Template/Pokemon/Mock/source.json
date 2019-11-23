@@ -1,0 +1,30 @@
+[
+   {
+    "name": "Bulbasaur",
+    "description": "grass"
+  },
+   {
+    "name": "Ivysaur",
+    "description": "grass"
+  },
+   {
+    "name": "Venusaur",
+    "description": "grass"
+  },
+   {
+    "name": "Charmander",
+    "description": "fire"
+  },
+   {
+    "name": "Charmeleon",
+    "description": "fire"
+  },
+   {
+    "name": "Charizard",
+    "description": "fire"
+  },
+   {
+    "name": "Squirtle",
+    "description": "water"
+  }
+]
