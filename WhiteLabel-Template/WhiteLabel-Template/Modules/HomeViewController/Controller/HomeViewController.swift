@@ -106,8 +106,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: 100,height: 100)
+        let numberOfColumns = CGFloat(Settings.shared.numberOfColumns)
+        let totalWidth = collectionView.frame.width
+        let padding: CGFloat = 10
+        let widthWithoutPadding = totalWidth - (numberOfColumns * padding)
+        let itemSize: CGFloat = widthWithoutPadding / numberOfColumns
+        return CGSize(width: itemSize,height: itemSize)
     }
 }
 

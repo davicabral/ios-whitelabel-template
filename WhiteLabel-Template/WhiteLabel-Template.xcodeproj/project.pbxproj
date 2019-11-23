@@ -15,6 +15,7 @@
 		931BA8BF2389968A00835CE9 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7323898918003A7F79 /* FetchService.swift */; };
 		931BA8C02389968A00835CE9 /* Char.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6C238987E5003A7F79 /* Char.swift */; };
 		931BA8C32389968A00835CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D5F238985C6003A7F79 /* LaunchScreen.storyboard */; };
+		932127602389B61A0032E549 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321275F2389B61A0032E549 /* UIColor+AppColors.swift */; };
 		936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D54238985C5003A7F79 /* AppDelegate.swift */; };
 		936B5D57238985C5003A7F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D56238985C5003A7F79 /* SceneDelegate.swift */; };
 		936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D58238985C5003A7F79 /* HomeViewController.swift */; };
@@ -44,10 +45,13 @@
 		93AD65C12389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
 		93AD65C22389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
 		93AD65C32389A4BB00CF78CA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD65C02389A4BB00CF78CA /* Settings.swift */; };
+		93AD65C62389A8CA00CF78CA /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD65C52389A8C200CF78CA /* settings.json */; };
+		93AD65C72389A8CD00CF78CA /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 93AD65C42389A8AB00CF78CA /* settings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		931BA8C92389968A00835CE9 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9321275F2389B61A0032E549 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhiteLabel-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D54238985C5003A7F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		936B5D56238985C5003A7F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		93AD65B923899E4E00CF78CA /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		93AD65BE2389A45600CF78CA /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
 		93AD65C02389A4BB00CF78CA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		93AD65C42389A8AB00CF78CA /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
+		93AD65C52389A8C200CF78CA /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,21 @@
 			path = RNM;
 			sourceTree = "<group>";
 		};
+		9321275B2389AC230032E549 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9321275E2389B60C0032E549 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9321275F2389B61A0032E549 /* UIColor+AppColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		936B5D48238985C5003A7F79 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +151,13 @@
 		936B5D53238985C5003A7F79 /* WhiteLabel-Template */ = {
 			isa = PBXGroup;
 			children = (
-				93AD65B823899E3E00CF78CA /* VIew */,
+				9321275E2389B60C0032E549 /* Extensions */,
 				936B5D752389894A003A7F79 /* Mock */,
-				936B5D72238988FB003A7F79 /* Service */,
-				936B5D6B238987DD003A7F79 /* Model */,
 				936B5D68238987A8003A7F79 /* Modules */,
+				936B5D72238988FB003A7F79 /* Service */,
+				93AD65B823899E3E00CF78CA /* View */,
+				936B5D6B238987DD003A7F79 /* Model */,
+				9321275B2389AC230032E549 /* Configurations */,
 				936B5D54238985C5003A7F79 /* AppDelegate.swift */,
 				936B5D56238985C5003A7F79 /* SceneDelegate.swift */,
 				936B5D5D238985C6003A7F79 /* Assets.xcassets */,
@@ -148,8 +171,8 @@
 		936B5D68238987A8003A7F79 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				936B5D7823898D38003A7F79 /* DescriptionController */,
 				936B5D69238987AE003A7F79 /* HomeViewController */,
+				936B5D7823898D38003A7F79 /* DescriptionController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -157,8 +180,8 @@
 		936B5D69238987AE003A7F79 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				936B5D6E2389880A003A7F79 /* View */,
 				936B5D6A238987C6003A7F79 /* Controller */,
+				936B5D6E2389880A003A7F79 /* View */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -224,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				93AD659B23899B2900CF78CA /* source.json */,
+				93AD65C42389A8AB00CF78CA /* settings.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -242,16 +266,17 @@
 			isa = PBXGroup;
 			children = (
 				93AD65B423899CAF00CF78CA /* source.json */,
+				93AD65C52389A8C200CF78CA /* settings.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		93AD65B823899E3E00CF78CA /* VIew */ = {
+		93AD65B823899E3E00CF78CA /* View */ = {
 			isa = PBXGroup;
 			children = (
 				93AD65B923899E4E00CF78CA /* DebugView.swift */,
 			);
-			path = VIew;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +375,7 @@
 			files = (
 				931BA8C32389968A00835CE9 /* LaunchScreen.storyboard in Resources */,
 				93AD659923899A4C00CF78CA /* Assets.xcassets in Resources */,
+				93AD65C72389A8CD00CF78CA /* settings.json in Resources */,
 				93AD659C23899B3A00CF78CA /* source.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +397,7 @@
 			files = (
 				93AD65B523899CC300CF78CA /* source.json in Resources */,
 				93AD65B723899CFF00CF78CA /* Assets.xcassets in Resources */,
+				93AD65C62389A8CA00CF78CA /* settings.json in Resources */,
 				93AD65A823899C6200CF78CA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */,
+				932127602389B61A0032E549 /* UIColor+AppColors.swift in Sources */,
 				936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */,
 				936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */,
 				93AD65C12389A4BB00CF78CA /* Settings.swift in Sources */,
@@ -637,7 +665,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.Pokemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,7 +683,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.RNM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabral.oliveira.Pokemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
