@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.backgroundColor = .clear
         collection.dataSource = self
         collection.delegate = self
         collection.translatesAutoresizingMaskIntoConstraints = false
@@ -30,6 +31,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
         let safeArea = view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
@@ -60,6 +62,15 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         cell.setup(char)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let char = objects?[indexPath.row] else {
+            return
+        }
+        
+        let controller = DescriptionViewController(char: char)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -16,6 +16,7 @@
 		936B5D7023898826003A7F79 /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6F23898826003A7F79 /* CharCollectionViewCell.swift */; };
 		936B5D7423898918003A7F79 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7323898918003A7F79 /* FetchService.swift */; };
 		936B5D7723898A05003A7F79 /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D7623898960003A7F79 /* source.json */; };
+		936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		936B5D6F23898826003A7F79 /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
 		936B5D7323898918003A7F79 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
 		936B5D7623898960003A7F79 /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		936B5D68238987A8003A7F79 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				936B5D7823898D38003A7F79 /* DescriptionController */,
 				936B5D69238987AE003A7F79 /* HomeViewController */,
 			);
 			path = Modules;
@@ -130,6 +133,22 @@
 				936B5D7623898960003A7F79 /* source.json */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		936B5D7823898D38003A7F79 /* DescriptionController */ = {
+			isa = PBXGroup;
+			children = (
+				936B5D7923898D44003A7F79 /* Controller */,
+			);
+			path = DescriptionController;
+			sourceTree = "<group>";
+		};
+		936B5D7923898D44003A7F79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				936B5D7A23898D7A003A7F79 /* DescriptionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */,
+				936B5D7B23898D7A003A7F79 /* DescriptionViewController.swift in Sources */,
 				936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */,
 				936B5D57238985C5003A7F79 /* SceneDelegate.swift in Sources */,
 				936B5D7023898826003A7F79 /* CharCollectionViewCell.swift in Sources */,
