@@ -1,0 +1,14 @@
+//
+//  Production.xcconfig
+//  WhiteLabel-Template
+//
+//  Created by Davi Cabral de Oliveira on 24/11/19.
+//  Copyright © 2019 Davi Cabral de Oliveira. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = "https:/$()/www.servico.com/prod"
+
+

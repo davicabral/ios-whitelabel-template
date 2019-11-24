@@ -43,7 +43,7 @@ class DescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .backgroundColor
         
         imageView.image = char.image
         nameLabel.text = char.name

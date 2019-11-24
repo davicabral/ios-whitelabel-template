@@ -16,6 +16,11 @@
 		931BA8C02389968A00835CE9 /* Char.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D6C238987E5003A7F79 /* Char.swift */; };
 		931BA8C32389968A00835CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B5D5F238985C6003A7F79 /* LaunchScreen.storyboard */; };
 		932127602389B61A0032E549 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321275F2389B61A0032E549 /* UIColor+AppColors.swift */; };
+		932127612389B68B0032E549 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321275F2389B61A0032E549 /* UIColor+AppColors.swift */; };
+		932127622389B68B0032E549 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321275F2389B61A0032E549 /* UIColor+AppColors.swift */; };
+		9321276B238AA2FD0032E549 /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321276A238AA2FD0032E549 /* EnvironmentSettings.swift */; };
+		9321276C238AA3A60032E549 /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321276A238AA2FD0032E549 /* EnvironmentSettings.swift */; };
+		9321276D238AA3A60032E549 /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321276A238AA2FD0032E549 /* EnvironmentSettings.swift */; };
 		936B5D55238985C5003A7F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D54238985C5003A7F79 /* AppDelegate.swift */; };
 		936B5D57238985C5003A7F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D56238985C5003A7F79 /* SceneDelegate.swift */; };
 		936B5D59238985C5003A7F79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B5D58238985C5003A7F79 /* HomeViewController.swift */; };
@@ -52,6 +57,9 @@
 /* Begin PBXFileReference section */
 		931BA8C92389968A00835CE9 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9321275F2389B61A0032E549 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		93212764238AA1F20032E549 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		93212765238AA1FB0032E549 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		9321276A238AA2FD0032E549 /* EnvironmentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSettings.swift; sourceTree = "<group>"; };
 		936B5D51238985C5003A7F79 /* WhiteLabel-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhiteLabel-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B5D54238985C5003A7F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		936B5D56238985C5003A7F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +136,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		93212763238AA1D20032E549 /* EnvironmentSettings */ = {
+			isa = PBXGroup;
+			children = (
+				93212764238AA1F20032E549 /* Development.xcconfig */,
+				93212765238AA1FB0032E549 /* Production.xcconfig */,
+				9321276A238AA2FD0032E549 /* EnvironmentSettings.swift */,
+			);
+			path = EnvironmentSettings;
+			sourceTree = "<group>";
+		};
 		936B5D48238985C5003A7F79 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +169,7 @@
 		936B5D53238985C5003A7F79 /* WhiteLabel-Template */ = {
 			isa = PBXGroup;
 			children = (
+				93212763238AA1D20032E549 /* EnvironmentSettings */,
 				9321275E2389B60C0032E549 /* Extensions */,
 				936B5D752389894A003A7F79 /* Mock */,
 				936B5D68238987A8003A7F79 /* Modules */,
@@ -410,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				931BA8BA2389968A00835CE9 /* HomeViewController.swift in Sources */,
+				932127612389B68B0032E549 /* UIColor+AppColors.swift in Sources */,
 				931BA8BB2389968A00835CE9 /* DescriptionViewController.swift in Sources */,
 				931BA8BC2389968A00835CE9 /* AppDelegate.swift in Sources */,
 				93AD65C22389A4BB00CF78CA /* Settings.swift in Sources */,
@@ -418,6 +438,7 @@
 				931BA8BE2389968A00835CE9 /* CharCollectionViewCell.swift in Sources */,
 				931BA8BF2389968A00835CE9 /* FetchService.swift in Sources */,
 				931BA8C02389968A00835CE9 /* Char.swift in Sources */,
+				9321276C238AA3A60032E549 /* EnvironmentSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +456,7 @@
 				936B5D7023898826003A7F79 /* CharCollectionViewCell.swift in Sources */,
 				936B5D7423898918003A7F79 /* FetchService.swift in Sources */,
 				936B5D6D238987E5003A7F79 /* Char.swift in Sources */,
+				9321276B238AA2FD0032E549 /* EnvironmentSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93AD659F23899C6200CF78CA /* HomeViewController.swift in Sources */,
+				932127622389B68B0032E549 /* UIColor+AppColors.swift in Sources */,
 				93AD65A023899C6200CF78CA /* DescriptionViewController.swift in Sources */,
 				93AD65A123899C6200CF78CA /* AppDelegate.swift in Sources */,
 				93AD65C32389A4BB00CF78CA /* Settings.swift in Sources */,
@@ -451,6 +474,7 @@
 				93AD65A323899C6200CF78CA /* CharCollectionViewCell.swift in Sources */,
 				93AD65A423899C6200CF78CA /* FetchService.swift in Sources */,
 				93AD65A523899C6200CF78CA /* Char.swift in Sources */,
+				9321276D238AA3A60032E549 /* EnvironmentSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +494,7 @@
 /* Begin XCBuildConfiguration section */
 		931BA8C72389968A00835CE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212764238AA1F20032E549 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +513,7 @@
 		};
 		931BA8C82389968A00835CE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212765238AA1FB0032E549 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,6 +646,7 @@
 		};
 		936B5D66238985C6003A7F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212764238AA1F20032E549 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +665,7 @@
 		};
 		936B5D67238985C6003A7F79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212765238AA1FB0032E549 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +684,7 @@
 		};
 		93AD65AC23899C6200CF78CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212764238AA1F20032E549 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,6 +703,7 @@
 		};
 		93AD65AD23899C6200CF78CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93212765238AA1FB0032E549 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .backgroundColor
         
         let safeArea = view.safeAreaLayoutGuide
         let topAnchor: NSLayoutYAxisAnchor
@@ -73,6 +73,8 @@ class HomeViewController: UIViewController {
         FetchService.all { [weak self] (chars) in
             self?.objects = chars
         }
+        
+        print(Environment.baseURL)
     }
 
 }

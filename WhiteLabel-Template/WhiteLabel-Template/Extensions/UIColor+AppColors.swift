@@ -10,5 +10,5 @@ import UIKit
 
 extension UIColor {
     
-    let backgroundColor = UIColor(named: "backgroundColor")
+   static let backgroundColor = UIColor(named: "backgroundColor")
 }
